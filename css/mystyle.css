@@ -772,7 +772,7 @@ progress::-moz-progress-bar {
     .ui {
         display: block;
         margin: 30px auto 0px auto;
-        width: 50%;
+        width: 100%;
     }
 
     .project-img-long {
