@@ -1,17 +1,17 @@
-html[case='fb'] {
+html[case='watch'] {
     --section-dark: #141414;
 }
 
-html[case='kf'] {
-    --title-img: url(../assets/kf-order/header-img.png);
+html[case='quirk'] {
+    --title-img: url(../assets/work-cover/quirk_cover.png);
 }
 
-html[case='refuel'] {
+html[case='vinerx'] {
     --section-dark: #3C3A4E;
 }
 
 html[case='timelapse'] {
-    --title-img: url(../assets/timelapse/header.png);
+    --title-img: url(../assets/work-cover/visions.png);
 }
 
 /* light & dark img */
