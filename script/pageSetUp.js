@@ -20,7 +20,7 @@ function renderNav() {
         logo.append(logoImg).click(function () { closeMenu(); smoothScrollTo('#intro') });
         work.click(function(){closeMenu(); smoothScrollTo('#work')});
         about.click(function(){closeMenu(); smoothScrollTo('#about')});
-        cv.attr('href','./assets/')
+        cv.attr('href','./assets/CharisaShinResume.pdf')
     } else {
         logo.append(logoImg).attr('href','../index.html')
         work.attr('href','../index.html#work')
