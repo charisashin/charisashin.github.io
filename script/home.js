@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $.getJSON('./content/home.json', function (data) {
-        $.each(data.projects, function () { renderWork(this) });
-    })
+    // $.getJSON('./content/home.json', function (data) {
+    //     $.each(data.projects, function () { renderWork(this) });
+    // })
     //scroll hint
     $('.scroll-hint').click(function(){
         smoothScrollTo('#work')
@@ -17,7 +17,7 @@ function renderWork(a) {
         video = $('<video loop playsinline preload/>').attr('src', a.video),
         wrap = $('<div/>').addClass('img-wrap')
             .append(img).append(video)
-            
+
         arrow = '<span> →</span>',
         title = $('<h3/>').append(a.title + arrow),
         caption = $('<p/>').text(a.caption);
@@ -39,4 +39,3 @@ function stop(a) {
     video.pause();
     video.currentTime = 0;
 }
-
