@@ -6,7 +6,7 @@ html[case='quirk'] {
     --title-img: url(../assets/work-cover/quirk_cover.png);
 }
 
-html[case='vinerx'] {
+html[case='journey'] {
     --section-dark: #3C3A4E;
 }
 
@@ -139,7 +139,8 @@ img.l {
 }
 
 .hover-child * {
-    transition: all 200ms ease-in-out;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
 }
 
 .hover-child>*:hover {

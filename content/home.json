@@ -16,10 +16,10 @@
         },
         {
             "index": "Case 3",
-            "title": "Vinerx",
-            "caption": "Web UI Design, Rapid Prototyping",
-            "img": "./assets/work-cover/vinerx.jpg",
-            "href": "./work/vinerx.html"
+            "title": "Journey",
+            "caption": "Web UI Design, UX & HCI Research, Motion Graphics",
+            "img": "./assets/work-cover/research-cover.jpg",
+            "href": "./work/journey.html"
         },
         {
             "index": "Case 4",

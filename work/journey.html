@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" path='project' case='journey'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- site icon -->
+  <link rel="icon" href="../assets/fav-icon.png" type="image/png" />
+  <link rel="shortcut icon" href="../assets/fav-icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/fav-icon.png" />
+  <!-- title -->
+  <title>Journey</title>
+  <meta name="og:title" content="Journey" />
+  <!-- url -->
+  <meta name="url" content="http://charisa.design">
+  <meta name="og:url" content="http://charisa.design">
+  <!-- description -->
+  <meta name="description" content="Journey | Charisa Shin" />
+  <meta name="og:description" content="Journey | Charisa Shin" />
+  <!-- style -->
+  <link rel="stylesheet" href="../style/style_guide.css">
+  <link rel="stylesheet" href="../style/case_study.css">
+  <link rel="stylesheet" href="../style/nav.css">
+  <link href="https://cdn.bootcss.com/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- loading -->
+  <link rel="stylesheet" href="../style/loadng.css">
+  <script src="../script/loading.js"></script>
+</head>
+
+<body>
+  <nav></nav>
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+  <section data-aos="fade-up" data-aos-duration="1000" class="title">
+    <h1>Journey:</h1>
+    <h1>AI-Assisted Journaling</h1>
+  </section>
+  <img data-aos="fade-up" data-aos-duration="1000" src="../assets/journey/journey-header.png" class="title-img">
+  <section id="Overview" data-aos="fade-up" data-aos-duration="1000" class="overview">
+    <h2>Overview</h2>
+    <div>
+      <p>AI applications can offer many valuable qualities to mental health treatment, including 24/7 accessibility and responsiveness, privacy protection through anonymity, and potential solutions to barriers such as a lack of providers in rural
+        areas and feelings of fear, guilt, or shame that may stop someone with depression from reaching out to others.</p>
+      <p>However, current AI-based technologies revolve around creating patterned and consistent Q&A chatbots and do not employ the adaptive and personalized qualities that would help a user actively learn from their own journaling. This UCLA HCI Lab project
+        aims to use expressive journaling to aid a user in changing their negative thinking.
+      </p>
+
+      </p>
+    </div>
+    <div class="meta-info">
+      <div class="meta-item">
+        <p><strong>Date</strong></p>
+        <p>Ongoing, Dec 2019 - present</p>
+      </div>
+      <div class="meta-item">
+        <p><strong>My Role</strong></p>
+        <p>UI/UX Designer & Researcher</p>
+      </div>
+
+      <div class="meta-item">
+        <p><strong>My Team</strong></p>
+        <p>Prof. Xiang Chen, Violynne Wang, <br>Grace Zhao, Sam Arlin, Yifan Xu, Brandon Ngo</p>
+      </div>
+    </div>
+  </section>
+  <section data-aos="fade-up" data-aos-duration="1000">
+    <div class="center">
+      <h3>The Goal</h3>
+      <p>
+        Working with psychology professors and counselors, our team from <a href="https://hci.ucla.edu">UCLA's HCI Lab</a> aimed to explore how AI could aid in mental health intervention, specifically through Cognitive Behavioral Therapy (CBT).
+        Through developing Journey, an <strong>emotional support platform </strong>in the form of an interactive web journal, we are actively seeking ways to help users learn from thoughts relating to feelings of depression, anxiety, or stress.
+    </div>
+  </section>
+  <section data-aos="fade-up" data-aos-duration="1000" class="center">
+    <div class="quote">
+      “How can we provide an interface that mirrors another positive self in a parallel world?”</div>
+  </section>
+  <section data-aos="fade-up" data-aos-duration="1000">
+    <h3>Existing Products</h3>
+    <p>There are two primary types of mental health technologies on the market right now: self-help reflection platforms without an interactive AI (check my case study on one of them <a href="../work/quirk.html">here!</a>), and AI-based chatbots that
+      help a user step through their thoughts using patterned answers.</p>
+    <div class="col-3 hover-child">
+      <a href="https://quirk.fyi/" target="_blank"><img src="../assets/journey/quirk.png" alt=""></a>
+      <a href="https://woebot.io/" target="_blank"><img src="../assets/journey/woebot1.png" alt=""></a>
+      <a href="https://youper.ai/" target="_blank"><img src="../assets/journey/youper1.png" alt=""></a>
+    </div>
+
+  </section>
+  <section data-aos="fade-up" data-aos-duration="1000">
+    <div class="center">
+      <h3>Insights</h3>
+      <ol>
+        <li><strong>Varying levels of personal connection.</strong><br>Applications can range from intimate communication
+          through AI-led text message conversations to more impersonal, self-guided documentation.</li>
+        <li><strong>The necessity of raising emotional awareness.</strong><br>All of the programs focus on helping
+          the user to raise their own awareness of their emotional state and reactions.</li>
+        <li><strong>Limited interaction and personalization.</strong><br>Most applications
+          have a fixed level of AI intervention, which doesn't allow for users to take control of the expression process.</li>
+      </ol>
+    </div>
+  </section>
+  <section data-aos="fade-up" data-aos-duration="1000">
+    <h3>Background Research</h3>
+    <p><strong>🤔 Cognitive distortions cause individuals to perceive reality inaccurately.</strong>
+      These distortions kind of automatic thinking and can contribute to overall pessimism and depression. Challenging
+      and changing these skewed thoughts are a key element to Cognitive Behavioral Therapy (CBT).</p>
+    <p><strong>✏️ Words can act as references for cognitive distortions.</strong>
+      Certain words with <a href="https://arxiv.org/pdf/1909.07502.pdf" target="_blank">negative connotations</a> can be linked to different cognitive distortion patterns. Finding and correcting those
+      words could have a signficant impact on a user's thought process.</p>
+  </section>
+  <section id="Prototyping_Process" data-aos="fade-up" data-aos-duration="1000" class="grey">
+    <h2>Prototyping Process</h2>
+    <h3>Brainstorming & Ideation</h3>
+    <p>The initial stages of brainstorming were interesting to me because our team had to consider
+      both the NLP processes behind the software and the visual interface with which the user would interact.
+      Designing the interface UI depended heavily on what AI features would be implemented, which meant constant collaboration
+      with the engineers on sketching out the wireframes.</p>
+    <div class="col-3">
+      <div class="container">
+        <img src="../assets/journey/interaction-sketch.png" alt="">
+        <p class="caption">Sketch of user interaction</p>
+      </div>
+      <div class="container">
+        <img src="../assets/journey/storyboard.png" alt="">
+        <p class="caption">Storyboarding model</p>
+      </div>
+      <div class="container">
+        <img src="../assets/journey/interface-sketch.jpg" alt="">
+        <p class="caption">General interface sketch</p>
+      </div>
+    </div>
+  </section>
+  <section class="grey">
+    <h3>First-Iteration Prototypes</h3>
+    <p>In the end, we compiled descriptions of the main features and how they would appear within the UI.
+      The design decisions we established were mostly related to the flow of the CBT procedure in catching, checking, and
+      challenging cognitive distortions.</p>
+    <div class="col-2">
+      <img src="../assets/journey/features-chart.png" alt="" class="l">
+      <img src="../assets/journey/screens-page.jpg" alt="" class="l">
+    </div>
+  </section>
+
+  <section id="Professional_Feedback" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Professional Feedback</h2>
+    <p>To ensure that this web application is clincally viable and to evaluate the quality of our interactive system, our team met regularly with psychology professionals,
+      including professors and practicing counselors.
+      Regular feedback from professionals, as listed below, provided insights for each iteration of both the back-end system and front-end interface design.</p>
+    <div class="center">
+      <h2></h2>
+      <h3>Insights</h3>
+      <ol>
+        <li><strong>Technology as an emerging means for therapy.</strong><br>Research indicates that people will be more
+          honest with a computer than with a clinician or therapist they don't know.</li>
+        <li><strong>Simple language is more accessible. </strong><br>It's important to make the language
+          of the application as simple as possible, since "over-intellectualization" can actually have negative effects on the user's experience.</li>
+        <li><strong>Evaluating interventions.</strong><br>In principle, every assessment is an intervention and every
+          intervention is an assessment. Thus, every time a user doesn't respond, it's informative.</li>
+      </ol>
+    </div>
+    <div class="col-2">
+      <div>
+        <p><strong>👍🏻 Things to Do</strong></p>
+        <ul>
+          <li>Keep it flexible: in a regular therapy setting, it wouldn't be unusual for a client to switch subjects suddenly; the interface
+            has to be prepared for those topic changes.</li>
+          <li>Give the user written feedback: establish reliability of the AI and help the user understand their own reactivity and tendencies
+            by providing regular feedback.</li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>👎🏻 Things to Avoid</strong></p>
+        <ul>
+          <li>Challenging surface-level thoughts: users usually know when they're making a false statement
+            (i.e. "I'm an idiot"), so it's important to focus on more subtle distortions.</li>
+          <li>Designing an overly specific interface: although there isn't going to be an interface design that is
+            optimal for every user, it's good to keep it as neutral as possible.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="AI_Intervention" data-aos="fade-up" data-aos-duration="1000" class="dark">
+    <h2>AI Intervention</h2>
+    <h3>Mapping the App Features</h3>
+    <p>To understand how the AI would interact with the user through the journaling platform, our group devised a chart to display the different levels of AI intervention and what features would correlate with each tier.
+    </p>
+    <img src="../assets/journey/levels-ai.png" alt="">
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <h3>Features Hierarchy</h3>
+    <p>The app incorporates four main features: Auto-Suggest, Reminders, Guiding Dialogue, and Connection & Friendship. Each feature ties in with a unique objective to ultimately guide the user
+      in reorienting their thought patterns.</p>
+    <img src="../assets/journey/features-list.jpg" alt="">
+  </section>
+
+  <section id="Design_Decisions" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Design Decisions</h2>
+      <p>After garnering information and feedback from our interviews with professors and psychology professionals, another designer and I worked on high-fidelity prototypes
+        and motion designs of the second design iteration. We focused specifically on how elements of the UI could lend to the user's success in expressing their thoughts,
+      including typography, colors, iconography, margins and text placement, motion graphics, and the overall visual framework of the interface.</p>
+      <div class="col-3 hover-child">
+          <img src="../assets/journey/colors.png" alt="">
+          <img src="../assets/journey/text.png" alt="">
+          <img src="../assets/journey/icons.png" alt="">
+      </div>
+  </section>
+
+  <section data-aos="fade-up" data-aos-duration="1000" class="dark">
+    <h2>Motion Demo</h2>
+      <div class="col-2">
+      <div class="text">
+        <h3>Feature 1: Auto-Suggest</h3>
+        <p>With the goal of encouraging users to change their mindsets, we provided alternative words and phrases to what they wrote down. Similar to the smart compose function of Gmail,
+          the application generates more positive ways to finish sentences.
+         </p>
+      </div>
+      <video src="../assets/journey/feat1.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <div class="col-2">
+    <video src="../assets/journey/feat2.mp4" autoplay loop muted playsinline></video>
+    <div class="text" style="padding-left:30px">
+      <h3>Feature 2: Reminders</h3>
+      <p>Reminders help improve the user's awareness of their emotional status and identify distortions on their own. A familiar dictionary
+        definition design helps the user commit certain distortions to memory to avoid in the future.
+       </p>
+    </div>
+  </div>
+  <h3></h3>
+  <h3></h3>
+  <h3></h3>
+    <div class="col-2">
+      <div class="text">
+        <h3>Feature 3: Guiding Dialogue</h3>
+        <p>To encourage further introspection, we provided users with probing questions in order to discover the deeper reason behind the their negative emotions.
+        We chose to use a moving three-dot symbol to represent the computer "typing" a response to the entry, much like in a text conversation with a human companion.</p>
+      </div>
+      <video src="../assets/journey/feature1-vid.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <div class="col-2">
+    <video src="../assets/journey/feat4.mp4" autoplay loop muted playsinline></video>
+    <div class="text" style="padding-left:30px">
+      <h3>Feature 4: Connection & Friendship</h3>
+      <p>In order to help the user build a collaborative relationship with the AI, empathetic phrasing and a gentle UI design
+        were critical. Softer elements make the user feel more at ease and more comfortable with sharing deeply.
+       </p>
+    </div>
+  </div>
+  </section>
+
+  <section id="Next_Steps" data-aos="fade-up" data-aos-duration="1000">
+    <div class="center">
+      <h3>Next Steps</h3>
+      <p>Journey is still a developmental work in progress. Next steps involve moving into wizard-of-oz and user testing.
+      This step is especially crucial since the interface revolves so heavily around users and their experiences. As a designer,
+    I will be working to carry out tests on remote and local users and to reconcile user testing results with the next design interation. </p>
+      <p><strong>Constant collaboration!</strong><br>
+        <p>I will also be continuing to work closely with the software engineers on our team to tie the back-end NLP processes
+          with the front-end interface by carefully crafting the UI to accomodate both design and engineering purposes. Check back soon
+        to find out more about our progress on this project!</p>
+    </div>
+  </section>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
+  <script src="../script/pageSetUp.js"></script>
+  <script src="../script/casestudy.js"></script>
+  <script src="../script/richlink.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
