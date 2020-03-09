@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    // $.getJSON('./content/home.json', function (data) {
-    //     $.each(data.projects, function () { renderWork(this) });
-    // })
+    $.getJSON('./content/home.json', function (data) {
+        $.each(data.projects, function () { renderWork(this) });
+    })
     //scroll hint
     $('.scroll-hint').click(function(){
         smoothScrollTo('#work')
