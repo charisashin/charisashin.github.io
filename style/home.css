@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'SilkSerif';
+  src: url("../assets/SilkSerif-BoldItalic.eot");
+  src: url("../assets/SilkSerif-BoldItalic.tff") format('truetype'),
+       url("../assets/SilkSerif-BoldItalic.woff") format('woff'),
+       url("..assets/SilkSerif-BoldItalic.woff2") format('woff2'),
+       url("../assets/SilkSerif-BoldItalic.eot") format('embedded-opentype');
+}
+
 * {
     break-inside: avoid-column;
 }
@@ -46,9 +55,10 @@ body {
 }
 .intro h1 strong {
     color: #4689f2;
-    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-family: 'SilkSerif', serif;
     font-style: italic;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .scroll-hint {
