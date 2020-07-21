@@ -2,6 +2,30 @@
 
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+@import url("https://use.typekit.net/dyj5luj.css");
+
+@font-face {
+  font-family: 'Porpora';
+  src: url("../assets/Porpora-Regular.tff");
+  src: url("../assets/Porpora-Regular.woff") format('woff'),
+       url("../assets/Porpora-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Restora';
+  src: url("../assets/Restora.otf");
+}
+
+@font-face {
+  font-family: 'Silka';
+  src: url("../assets/Silka-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("../assets/GraphikRegular.otf");
+}
 
 
 /* colors */
@@ -30,6 +54,7 @@ html[data-theme='dark'] {
     transition: color 300ms ease-in-out, background-color 300ms ease-in-out ;
 }
 
+
 section.dark {
     --bg-color: #121212;
     --bg-color-2: #262626;
@@ -42,7 +67,7 @@ section.dark {
 /* footer */
 
 footer {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Porpora', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #b2b2b2;
@@ -65,7 +90,7 @@ body {
 /* font */
 
 p, li {
-    font-family: 'Inter var experimental', sans-serif;
+    font-family: 'Graphik', sans-serif;
     font-variation-settings: 'wght' 350;
     font-size: 16px;
     line-height: 180%;
@@ -80,24 +105,29 @@ p>strong, li>strong {
 
 p a {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px dashed #bbbbbb;
     color: var(--hint-color);
 }
 
+
 p a:hover {
-    opacity: 1;
+    opacity: 0.5;
+    transition: 0.25s;
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Porpora', sans-serif;
     font-weight: 550;
+    letter-spacing: 0.5px;
     font-size: 36px;
     line-height: 150%;
     color: var(--text-color-primary);
 }
 
 h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Porpora', sans-serif;
+    letter-spacing: 0.5px;
     font-weight: 500;
     font-size: 32px;
     line-height: 150%;
@@ -106,7 +136,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Porpora', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
@@ -115,7 +145,7 @@ h3 {
 }
 
 .caption {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Porpora', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -124,7 +154,7 @@ h3 {
 }
 
 .quote {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Porpora', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 24px;

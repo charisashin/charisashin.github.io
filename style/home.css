@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ipo2eke.css");
 @font-face {
   font-family: 'SilkSerif';
   src: url("../assets/SilkSerif-BoldItalic.eot");
@@ -5,6 +6,16 @@
        url("../assets/SilkSerif-BoldItalic.woff") format('woff'),
        url("..assets/SilkSerif-BoldItalic.woff2") format('woff2'),
        url("../assets/SilkSerif-BoldItalic.eot") format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Restora';
+  src: url("../assets/Restora.otf");
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url("../assets/Ogg-Roman.otf");
 }
 
 * {
@@ -29,9 +40,9 @@ body {
 
 .intro .avatar {
     align-self: center;
-    width: 80px;
-    min-height: 80px;
-    background-image: url(../assets/avatar.png);
+    width: 50px;
+    min-height: 50px;
+    background-image: url(../assets/daikon1.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #fff;
@@ -41,11 +52,11 @@ body {
 
 .intro h1 {
     align-self: center;
-    font-family: 'Merriweather', serif;
+    font-family: 'Restora', serif;
     font-size: 30px;
     line-height: 1.6em;
     color: var(--text-color-tertiary);
-    text-align: center;
+    text-align: left;
     margin: 32px 0 120px 0;
     max-width: 311px;
 }
@@ -60,6 +71,7 @@ body {
     font-style: italic;
     font-weight: bold;
 }
+
 
 .scroll-hint {
     cursor: pointer;
@@ -165,8 +177,9 @@ body {
 }
 
 .work h3 {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-family: 'Porpora', Arial, Helvetica, sans-serif;
     font-size: 22px;
+    letter-spacing: 0.7px;
     line-height: 160%;
     font-weight: 600;
     margin: 12px 0 0 0;
@@ -174,7 +187,7 @@ body {
 }
 
 .work p {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-family: 'Restora', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 160%;
     font-weight: 400;
