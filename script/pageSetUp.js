@@ -10,9 +10,9 @@ function renderNav() {
     var nav = $('nav');
     var logoImg = $('<div/>').addClass('logo-img');
     var logo = $('<a/>').addClass('logo');
-    var work = $('<a/>').append('work'),
-        about = $('<a/>').append('About'),
-        cv = $('<a/>').append('Resume'),
+    var work = $('<a/>').append('WORK'),
+        about = $('<a/>').append('ABOUT'),
+        cv = $('<a/>').append('RESUME'),
         theme_icon = themeIcon(),
         menu_icon = menuIcon();
 
@@ -116,6 +116,6 @@ function smoothScrollTo(id) {
 //render footer
 function renderFooter(){
     console.log('footer')
-    var footer = $('<footer/>').text('© 2020 Charisa Shin');
+    var footer = $('<footer/>').text('Designed & built with ♡ by Charisa Shin © 2020');
     $('body').append(footer);
 }

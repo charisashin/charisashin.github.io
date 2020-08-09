@@ -27,20 +27,36 @@
   src: url("../assets/GraphikRegular.otf");
 }
 
+@font-face {
+  font-family: 'MierA Light';
+  src: url("../assets/MierA-Light.ttf");
+}
+
+@font-face {
+  font-family: 'MierA Book';
+  src: url("../assets/MierA-Book.ttf");
+}
+
+@font-face {
+  font-family: 'MierA Thin';
+  src: url("../assets/MierA-Thin.ttf");
+}
+
+
 
 /* colors */
 
 html[data-theme='light'] {
-    --bg-color: #fff;
+    --bg-color: #f4f2ec;
     --bg-color-2: #F8F8F9;
-    --text-color-primary: rgba(0, 0, 0, 0.95);
+    --text-color-primary: rgba(0, 0, 0, 0.75);
     --text-color-secondary: rgba(0, 0, 0, 0.45);
     --text-color-tertiary: rgba(0, 0, 0, 0.3);
     --text-color-p: rgba(0, 0, 0, 0.75);
 }
 
 html[data-theme='dark'] {
-    --bg-color: #121212;
+    --bg-color: #242424;
     --bg-color-2: #262626;
     --text-color-primary: rgba(255, 255, 255, .9);
     --text-color-secondary: rgba(255, 255, 255, .55);
@@ -67,7 +83,7 @@ section.dark {
 /* footer */
 
 footer {
-    font-family: 'Porpora', sans-serif;
+    font-family: 'MierA Light', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #b2b2b2;
@@ -90,7 +106,7 @@ body {
 /* font */
 
 p, li {
-    font-family: 'Graphik', sans-serif;
+    font-family: 'MierA Light', sans-serif;
     font-variation-settings: 'wght' 350;
     font-size: 16px;
     line-height: 180%;
@@ -117,16 +133,16 @@ p a:hover {
 }
 
 h1 {
-    font-family: 'Porpora', sans-serif;
-    font-weight: 550;
+    font-family: 'Ogg', sans-serif;
+    font-weight: 300;
     letter-spacing: 0.5px;
     font-size: 36px;
     line-height: 150%;
-    color: var(--text-color-primary);
+    color: #5a79aa;
 }
 
 h2 {
-    font-family: 'Porpora', sans-serif;
+    font-family: 'MierA Book', sans-serif;
     letter-spacing: 0.5px;
     font-weight: 500;
     font-size: 32px;
@@ -136,7 +152,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Porpora', sans-serif;
+    font-family: 'MierA Book', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
@@ -145,7 +161,7 @@ h3 {
 }
 
 .caption {
-    font-family: 'Porpora', sans-serif;
+    font-family: 'MierA Thin', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -154,7 +170,7 @@ h3 {
 }
 
 .quote {
-    font-family: 'Porpora', sans-serif;
+    font-family: 'MierA Light', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 24px;

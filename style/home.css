@@ -18,6 +18,30 @@
   src: url("../assets/Ogg-Roman.otf");
 }
 
+@font-face {
+  font-family: 'MierA Light';
+  src: url("../assets/MierA-Light.ttf");
+  src: url("../assets/MierA-Light.woff") format('woff'),
+       url("..assets/MierA-Light.woff2") format('woff2'),
+      url("../assets/MierA-Light.eot") format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'MierA Book';
+  src: url("../assets/MierA-Book.ttf");
+  src: url("../assets/MierA-Book.woff") format('woff'),
+       url("..assets/MierA-Book.woff2") format('woff2'),
+      url("../assets/MierA-Book.eot") format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'MierA Thin';
+  src: url("../assets/MierA-Thin.ttf");
+  src: url("../assets/MierA-Thin.woff") format('woff'),
+       url("..assets/MierA-Thin.woff2") format('woff2'),
+      url("../assets/MierA-Thin.eot") format('embedded-opentype');
+}
+
 * {
     break-inside: avoid-column;
 }
@@ -52,20 +76,26 @@ body {
 
 .intro h1 {
     align-self: center;
-    font-family: 'Restora', serif;
-    font-size: 30px;
+    font-family: 'Ogg', serif;
+    color: #5a79aa;
+    font-size: 36px;
     line-height: 1.6em;
-    color: var(--text-color-tertiary);
     text-align: left;
     margin: 32px 0 120px 0;
     max-width: 311px;
+}
+
+.intro h4{
+  font-size: 20px;
+  font-family: 'MierA Thin';
+  color: #5a79aa;
 }
 
 #work>.space {
     height: var(--section-gap);
 }
 .intro h1 strong {
-    color: #4689f2;
+    color: #5a79aa;
     font-size: 48px;
     font-family: 'SilkSerif', serif;
     font-style: italic;
@@ -80,7 +110,7 @@ body {
     line-height: 1.6em;
     color: var(--text-color-secondary);
     position: absolute;
-    bottom: 64px;
+    bottom: 50px;
 }
 
 .scroll-hint a {
@@ -177,8 +207,8 @@ body {
 }
 
 .work h3 {
-    font-family: 'Porpora', Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-family: 'MierA Book', Arial, Helvetica, sans-serif;
+    font-size: 24px;
     letter-spacing: 0.7px;
     line-height: 160%;
     font-weight: 600;
@@ -187,12 +217,12 @@ body {
 }
 
 .work p {
-    font-family: 'Restora', Arial, Helvetica, sans-serif;
+    font-family: 'MierA Light', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 160%;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 8px;
-    color: var(--text-color-tertiary);
+    color: var(--text-color-secondary);
 }
 
 /* abouts */
@@ -202,13 +232,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
     max-width: 400px;
 }
 
 #about>.me {
     max-width: 200px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin: var(--title-gap) 0;
     margin-bottom: 64px;
 }
@@ -283,8 +313,18 @@ a:hover .qrcode{
         min-height: 96px;
     }
     .intro h1{
-        font-size: 36px;
-        max-width: 600px;
+      margin: 30px;
+        font-size: 64px;
+        max-width: 900px;
+        text-align: center;
+        line-height: 80px;
+        color: #5a79aa;
+    }
+    .intro h4{
+      margin: -20px;
+      font-size: 20px;
+      font-family: 'MierA Thin';
+      color: #5a79aa;
     }
     .gallery {
         max-width: 980px;
@@ -301,6 +341,6 @@ a:hover .qrcode{
         transition: all 400ms ease-in-out;
     }
     #about>.me {
-        max-width: 320px;
+        max-width: 500px;
     }
 }

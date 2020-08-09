@@ -36,13 +36,13 @@ nav>.navWrap.open {
 }
 
 .navWrap>a {
-    font-family: "Porpora", sans-serif;
+    font-family: "MierA Book", sans-serif;
     text-transform: capitalize;
     letter-spacing: 0.5px;
     font-size: 28px;
     line-height: 240%;
-    color: var(--text-color-primary);
-    opacity: .3;
+    color: #5a79aa;
+    opacity: .5;
     cursor: pointer;
     transition: opacity 300ms ease-in-out;
     text-decoration: none;
@@ -53,7 +53,7 @@ nav>.navWrap.open {
 }
 
 nav>.logo {
-    font-family: 'Merriweather';
+    font-family: 'MierA Light';
     font-style: italic;
     font-weight: 700;
     font-size: 28px;
@@ -66,9 +66,10 @@ nav>.logo {
 }
 
 .logo>.logo-img {
+  margin-top: 20px;
     width: 50px;
     height: 50px;
-    background-image: url(../assets/daikon1.jpeg);
+    background-image: url(../assets/smile-logo1.png);
     background-size: cover;
     background-color: var(--bg-color-2);
     border-radius: 50%;
@@ -159,11 +160,11 @@ nav>.menu {
 
 @media only screen and (min-width: 768px) {
     nav {
-        height: 84px;
+        height: 90px;
         justify-content: space-between;
     }
     nav.hide {
-        top: -72px;
+        top: -80px;
     }
     nav>.menu {
         display: none;
@@ -180,10 +181,12 @@ nav>.menu {
         margin-left: 40px;
     }
     .navWrap>a {
-        font-size: 18px;
+      margin-top: 20px;
+        font-size: 14px;
         line-height: 150%;
+        color: #5a79aa;
     }
     .theme-switch {
-        margin-top: 0;
+        margin-top: 10px;
     }
 }
