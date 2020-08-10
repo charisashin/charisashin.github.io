@@ -1,17 +1,4 @@
 @import url("https://use.typekit.net/ipo2eke.css");
-@font-face {
-  font-family: 'SilkSerif';
-  src: url("../assets/SilkSerif-BoldItalic.eot");
-  src: url("../assets/SilkSerif-BoldItalic.tff") format('truetype'),
-       url("../assets/SilkSerif-BoldItalic.woff") format('woff'),
-       url("..assets/SilkSerif-BoldItalic.woff2") format('woff2'),
-       url("../assets/SilkSerif-BoldItalic.eot") format('embedded-opentype');
-}
-
-@font-face {
-  font-family: 'Restora';
-  src: url("../assets/Restora.otf");
-}
 
 @font-face {
   font-family: 'Ogg';

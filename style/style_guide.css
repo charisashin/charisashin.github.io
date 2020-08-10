@@ -1,31 +1,6 @@
 /* fonts import */
-
-@import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700i&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
 @import url("https://use.typekit.net/dyj5luj.css");
 
-@font-face {
-  font-family: 'Porpora';
-  src: url("../assets/Porpora-Regular.tff");
-  src: url("../assets/Porpora-Regular.woff") format('woff'),
-       url("../assets/Porpora-Regular.woff2") format('woff2');
-}
-
-@font-face {
-  font-family: 'Restora';
-  src: url("../assets/Restora.otf");
-}
-
-@font-face {
-  font-family: 'Silka';
-  src: url("../assets/Silka-Regular.otf");
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url("../assets/GraphikRegular.otf");
-}
 
 @font-face {
   font-family: 'MierA Light';
@@ -41,7 +16,6 @@
   font-family: 'MierA Thin';
   src: url("../assets/MierA-Thin.ttf");
 }
-
 
 
 /* colors */
