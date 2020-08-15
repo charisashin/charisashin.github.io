@@ -21,7 +21,7 @@
 /* colors */
 
 html[data-theme='light'] {
-    --bg-color: #f4f2ec;
+    --bg-color: #FFFFFF;
     --bg-color-2: #F8F8F9;
     --text-color-primary: rgba(0, 0, 0, 0.75);
     --text-color-secondary: rgba(0, 0, 0, 0.45);
