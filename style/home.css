@@ -7,26 +7,28 @@
 
 @font-face {
   font-family: 'MierA Light';
-  src: url("../assets/MierA-Light.ttf");
+  src: url("../assets/MierA-Light.eot");
   src: url("../assets/MierA-Light.woff") format('woff'),
        url("..assets/MierA-Light.woff2") format('woff2'),
-      url("../assets/MierA-Light.eot") format('embedded-opentype');
+       url("../assets/MierA-Light.ttf") format('truetype');
+
+
 }
 
 @font-face {
   font-family: 'MierA Book';
-  src: url("../assets/MierA-Book.ttf");
+  src: url("../assets/MierA-Book.eot");
   src: url("../assets/MierA-Book.woff") format('woff'),
        url("..assets/MierA-Book.woff2") format('woff2'),
-      url("../assets/MierA-Book.eot") format('embedded-opentype');
+       url("../assets/MierA-Book.tff") format('truetype');
 }
 
 @font-face {
   font-family: 'MierA Thin';
-  src: url("../assets/MierA-Thin.ttf");
+  src: url("../assets/MierA-Thin.eot")
   src: url("../assets/MierA-Thin.woff") format('woff'),
        url("..assets/MierA-Thin.woff2") format('woff2'),
-      url("../assets/MierA-Thin.eot") format('embedded-opentype');
+       url("../assets/MierA-Thin.ttf") format('truetype');
 }
 
 * {
@@ -247,6 +249,12 @@ body {
     height: 32px;
     position: relative;
     cursor: pointer;
+}
+
+.contact {
+  color: #5a79aa;
+  font-family: "MierA Book";
+  margin-left: 7px;
 }
 /* qr code */
 .qrcode {
