@@ -22,7 +22,7 @@ nav>.navWrap {
     top: 0px;
     left: 0;
     width: 100vw;
-    height: 140vh;
+    height: 100vh;
     background: var(--bg-color);
     display: none;
     flex-direction: column;
@@ -42,7 +42,7 @@ nav>.navWrap.open {
     font-size: 28px;
     line-height: 240%;
     color: #5a79aa;
-    opacity: .5;
+    opacity: .8;
     cursor: pointer;
     transition: opacity 300ms ease-in-out;
     text-decoration: none;

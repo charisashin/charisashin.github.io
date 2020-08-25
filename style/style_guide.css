@@ -17,6 +17,11 @@
   src: url("../assets/MierA-Thin.ttf");
 }
 
+@font-face {
+  font-family: 'Ogg';
+  src: url("../assets/Ogg-Roman.otf");
+}
+
 
 /* colors */
 
