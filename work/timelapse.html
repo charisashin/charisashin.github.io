@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- site icon -->
-    <link rel="icon" href="../assets/fav-icon.png" type="image/png" />
-    <link rel="shortcut icon" href="../assets/fav-icon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="../assets/fav-icon.png" />
+    <link rel="icon" href="../assets/Logo-Smile.png" type="image/png" />
+    <link rel="shortcut icon" href="../assets/Logo-Smile.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../assets/Logo-Smile.png" />
     <!-- title -->
     <title>Timelapse</title>
     <meta name="og:title" content="TimeLapse" />
@@ -29,10 +29,8 @@
 </head>
 
 <body>
+    <div id="cursor"></div>
     <nav></nav>
-    <div id="loading">
-        <div class="spinner"></div>
-    </div>
     <section data-aos="fade-up" data-aos-duration="1000" class="title">
         <h1>Timelapse:<br>Quantifying Everyday Life</h1>
     </section>
@@ -40,9 +38,8 @@
     <section id="Overview" data-aos="fade-up" data-aos-duration="1000" class="overview">
         <h2>Overview</h2>
         <div>
-            <p>“Quantifying everyday life” refers to tracking daily activities to further
-                self-awareness, and improve productivity, health, and work-life balance. However, it requires
-                consistent logging, patience, and discipline.
+            <p>How can we grow in awareness of how we track our time when we're too busy to even remember what happens in a day?
+              At this moment, pursuing such a goal would require consistent logging, patience, and discipline.
             </p>
             <p>Timelapse is an integrated mobile and smartwatch application that helps people keep track of how they spend their time on a daily basis.
               It was inspired by late-night conversations with friends about feeling that time was slipping away, without knowing where that time was being spent.
@@ -50,63 +47,68 @@
             </p>
         </div>
         <div class="meta-info">
-            <div class="meta-item">
-                <p><strong>Type</strong></p>
-                <p>Personal Project</p>
-            </div>
 
             <div class="meta-item">
                 <p><strong>Date</strong></p>
-                <p>2 months, Nov 2019 - Jan 2020</p>
+                <p>March 2020 - present</p>
             </div>
             <div class="meta-item">
                 <p><strong>My Role</strong></p>
-                <p>UX Designer</p>
+                <p>Product Designer & Researcher</p>
+            </div>
+            <div class="meta-item">
+                <p><strong>Tools</strong></p>
+                <p>Adobe Photoshop and Illustrator, Figma, Principle</p>
             </div>
         </div>
     </section>
-    <section id="Inspiration" data-aos="fade-up" data-aos-duration="1000" class="grey">
-        <img class="l" src="../assets/timelapse/design-process1.png">
-        <h2>Inspiration</h2>
-        <p>With the rise of smartwatches, I grew fascinated by their unique features -- specifically
-          their ability to track and measure personal milestones from the day, including steps walked,
-          heart-rate, sleeping quality, etc.
+    <section id="Problem" data-aos="fade-up" data-aos-duration="1000" class="grey">
+        <!-- <img class="l" src="../assets/timelapse/design-process1.png"> -->
+        <h2>The Problem</h2>
+        <p>It’s easy to get through the day without fully understanding where time is being allocated. Larger events might be easier to keep track of, but smaller activities and distractions are difficult to pinpoint. In fact, manually keeping track of every detail of the day proves counter-productive and frustrating.
+           <strong>Is there a way to automatically keep track of how people spend their time, to enhance productivity and wellbeing? </strong>
         </p>
-
-        <p>I wanted to see if there was a streamlined solution that would allow for users to skip
-        the arduous task of manually logging activities and behaviors by instead relying solely on a smartwatch
-        for automated recording. </p>
-
-        <img class="l" src="../assets/timelapse/past-present-future.png">
     </section>
 
-    <section data-aos="fade-up" data-aos-duration="1000" class="col-2">
-        <img src="../assets/timelapse/book.png" alt="">
-        <div>
-            <h3>The Book: Strange Life</h3>
-            <p>The Russian scientist Aleksandr Lyubishchev created a time-recording method in 1916, which
-             he used to document 56 years of his life with pen and paper. His biography espouses the benefits and
-             methodology behind tracking the hours of the day and how we spend them.</p>
-        </div>
-    </section>
-    <section data-aos="fade-up" data-aos-duration="1000" class="center">
+    <!-- <section data-aos="fade-up" data-aos-duration="1000" class="center">
         <div class="quote">
             “How can we unlock the full potential of smart devices to help track our use of time?”</div>
-    </section>
+    </section> -->
     <section id="Research" data-aos="fade-up" data-aos-duration="1000">
         <h2>Research</h2>
-        <h3>Timeline experiment</h3>
-        <p>I applied Lyubishchev’s method of time-recording using two personas and their respective two individual daily schedules. </p>
-        <img src="../assets/timelapse/personas1.png" alt=""><br><br><br>
-        <img src="../assets/timelapse/timelines.png" alt="">
+        <h3>Qualitative Interviews</h3>
+        <p>In order to understand the current pain points surrounding time-tracking, I conducted <strong>30+ informal interviews</strong> with potential users between the ages of 15-60,
+          structuring the questions to revolve around current time usage, time tracking methods, and hurdles in the time-tracking process.
+      </p>
     </section>
-    <section data-aos="fade-up" data-aos-duration="1000">
-        <div class="center">
-            <h3>Insights</h3>
-            <p><strong>The timeline unveils user patterns.</strong> Users often overestimate their working hours and
+      <section data-aos="fade-up" data-aos-duration="1000">
+          <div class="center">
+              <h3>Insights</h3>
+            <p><strong>92% of users expressed that they thought they were not maximizing their time.</strong> Users often overestimate their working hours and
                 underestimate the time they spend on leisure activities.
                 Reviewing the graph revealed distractions during work.</p>
 
+            <p><strong>Manual time-tracking is painful. </strong>Users would be prone to feeling
+            frustrated if they forgot to log their time, or even tempted to quit the exercise.</p>
+            <p><strong>Simple visuals are more effective than pure data.</strong> Users want to see exactly what they're spending their time on but also need accessibility, so simple visuals work much better than complex, unorganized data.
+
+    </p>
+        </div>
+      </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000">
+            <h3>Thought Experiment</h3>
+            <p>To synthesize my research findings and further define problems that accompany the process of time-tracking, I created
+            two personas to represent potential users and a possible timeline of what their typical day might look like.</p>
+            <img src="../assets/timelapse/personas1.png" alt=""><br><br><br>
+            <img src="../assets/timelapse/timelines.png" alt="">
+    </section>
+    <section data-aos="fade-up" data-aos-duration="1000">
+        <div class="center">
+              <h3>Insights</h3>
+            <p><strong>The timeline unveils user patterns.</strong> Users often overestimate their working hours and
+                underestimate the time they spend on leisure activities.
+                Reviewing the graph revealed distractions during work.</p>
             <p><strong>Manual time-tracking is painful. </strong>Users would be prone to feeling
             frustrated if they forgot to log their time, or even tempted to quit the exercise.</p>
             <p><strong>Simple visuals are more effective than pure data.</strong> Users want to see exactly what they're spending their time on but also need accessibility, so simple visuals work much better than complex, unorganized data.
@@ -118,9 +120,20 @@
     <section data-aos="fade-up" data-aos-duration="1000">
         <h3>Looking at other existing solutions</h3>
         <p>To see what already existed in addressing the productivity problem, I researched other
-          time-tracking applications, what did they well, and what could be improved.
+        time-tracking applications, what did they well, and what could be improved. I discovered that many apps
+        focused on time-tracking in a strictly statistical manner, which could be difficult to use to shed light on a user's daily habits.
         </p>
+        <br>
         <img src="../assets/timelapse/competitive-research.png" alt="">
+    </section>
+    <section data-aos="fade-up" data-aos-duration="1000">
+        <h3>Centralizing Time</h3>
+        <p>So how could I help users understand their time usage in an automated way? After reading productivity forums and having additional informal
+          conversations with potential users, I came to realize that in such a technological age, our devices are a window to how we spend our time&mdash;past,
+          present, and future.
+        </p>
+        <br>
+        <img src="../assets/timelapse/past-present-future.png" alt="">
     </section>
     <section id="Prototyping" data-aos="fade-up" data-aos-duration="1000" class="grey">
         <h2>Protoyping</h2>
@@ -128,26 +141,51 @@
         <p> We have so many applications on our phone already. Each app can provide automatic insight into what activities we complete and how we spend our time. I came up with the idea of
             defining a time-assessment system composed of three layers: Events, Behaviors, and Activities.
           </p>
+          <p>These layers help the user from becoming overwhelmed by an influx of data and give them the autonomy to determine how much information they want to see at a time. Only want a high-level view?
+          Choose to look only at Events. Want the specifics? Dive into Behaviors or Activities.</p>
         <img class="l" src="../assets/timelapse/Info-Structure.png" alt="">
-    </section>
-    <section class="grey">
-        <h3>Providing Insights</h3>
-        <p>Quantifying everyday life cannot be complete without valuable review and feedback. I designed “highlights” to
-            automatically present information on productivity, sleep, fitness, distractions, and memorable
-            moments.
-        </p>
-        </div>
-        <img class="l-img" src="../assets/timelapse/providing-insights.png" alt="">
 
     </section>
-    <section id="Design_Demo" data-aos="fade-up" data-aos-duration="1000" class="phone-demo">
+
+    <section data-aos="fade-up" data-aos-duration="1000">
+        <h3>Information Architecture</h3>
+        <p>Based on the time-assessment system, I constructed the user flow to represented what a user's journey might look like. Because the application
+          would be generating a significant amount of data, I wanted to keep the flow as simple and streamlined as possible.
+        </p>
+        <img class="l-img" src="../assets/timelapse/info-arch.png" alt="">
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000">
+        <h3>Wireframing & Low-Fidelity Mocks</h3>
+        <p>To automatically present information on productivity, sleep, fitness, distractions, and memorable
+            moments captured during the day, I designed "highlights". Highlights are basically snapshots to help
+            the user view their time spent through the usage of various apps. I centered the highlights around a card model, because of its
+            intuitive nature. Cards are great for quickly communicating information and they allow users to easily access information that <i>they</i>
+            are interested in.
+            <br><br>
+            Also, cards as content containers are easy to manipulate for responsive and mobile design, and also address issues of scalability, which allows for seamless handoff to engineers for development.
+        </p>
+        <br>
+        </div>
+        <img class="l-img" src="../assets/timelapse/providing-insights.png" alt="">
+      </section>
+
+        <section id="Accessibility" data-aos="fade-up" data-aos-duration="1000" class="grey">
+            <h2>Accessible Visual Design</h2>
+            <p> Colors and visual design elements were chosen with color-blind users specifically in mind since color acts as an important element of organization and affordance in this app. I made sure to use software tools to simulate colorblindness and ensure enough contrast, following WCAG 2.0 standards.
+              </p>
+            <img class="l" src="../assets/timelapse/wcag.png" alt="">
+
+        </section>
+    <section id="Final_Design" data-aos="fade-up" data-aos-duration="1000" class="phone-demo">
         <div class="phone">
             <video class="screen" autoplay muted loop src="../assets/timelapse/home.mov">
         </div>
         <div class="text">
             <h3>Home and Settings</h3>
             <p>The home screen acts as a splash page for reviewing the day and also displays the current event.
-              Also, users can access settings from this page and toggle dark mode if needed.
+              The screen is easily scrollable for a mobile format since users would be primarily be using singular fingers or their thumb.
+              I included a dark mode for light-sensitive users to prevent eye strain in darker environments.
             </p>
         </div>
     </section>
@@ -158,8 +196,8 @@
         <div class="text">
             <h3>Productivity and Health</h3>
             <p>To assess productivity and health levels, this screen draws from apps like the health and exercise monitor,
-              the user's calendar, and Pomodoro. The simple structure enables users to set goals and track their current
-              status easily. </p>
+              the user's calendar, and Pomodoro. To enable users to set goals and track their current
+              status easily, I focused on implementing data charts that are universally familar. </p>
         </div>
         <div class="phone">
             <video src="../assets/timelapse/productive-health.mov" class="screen" autoplay muted loop>
@@ -172,7 +210,8 @@
         <div class="text">
             <h3>Memorable Moments</h3>
             <p>This screen compiles the photos and videos taken in a day and chronologically displays them,
-              creating a representation of the time spent in a day, through providing a visual model of the events completed.</p>
+              creating a visual representation of the time spent in a day. I spent
+            the most time on this section, trying to figure out a way to display a day's worth of memories without crowding the screen.</p>
         </div>
     </section>
     <section data-aos="fade-up" data-aos-duration="1000">
@@ -181,8 +220,8 @@
     <section data-aos="fade-up" data-aos-duration="1000" class="phone-demo">
         <div class="text">
             <h2>Timeline</h2>
-            <p>This is a direct and straightforward approach to displaying every activity. Users can
-              tap each section for further details about how they used varying apps throughout the day. </p>
+            <p>Inspired loosely by Google Calendar's daily view, this screen is a direct and straightforward approach to displaying every activity. Users can
+              tap each section for further details of the Events, Behaviors, and Activities completed throughout the day. </p>
         </div>
         <div class="phone">
             <video src="../assets/timelapse/timeline.mov" class="screen" autoplay muted loop>
@@ -197,7 +236,6 @@
             <h3>Circling back to the watch</h3>
             <p>For the watch's display, I thought the most effective way to present productivity would be through
               the current time and task, with the option of viewing the timeline to see the day's events at a glance.
-
             </p>
         </div>
     </section>
@@ -215,7 +253,7 @@
             people spend on their electronic devices in a day and the designer's ethical obligation of encouraging users to
             spend more time off their devices. Quantifying the time spent can help people
            figure out how to better allocate their time. </p>
-           <p><strong>3. Further improvements.</strong> Based on the ethical consideration of encouraging time spent offscreen, I would love to implement a goal system to help the user adjust how they currently use their time and accomplish certain goals (i.e. spend 30 mins max. on social media)
+           <p><strong>3. Further improvements.</strong> Based on the ethical consideration of encouraging time spent offscreen, I would love to implement a goal system to help the user adjust how they currently use their time and accomplish certain goals (i.e. spend 30 mins max. on social media).
         </div>
     </section>
 

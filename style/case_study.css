@@ -20,7 +20,12 @@ html[data-theme='dark'] img.light, html[data-theme='light'] img.dark {
     display: none;
 }
 
+html {
+  background: #fff;
+}
+
 body {
+  cursor: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +46,37 @@ section.grey {
 
 section.dark {
     background: var(--section-dark);
+}
+
+#cursor {
+    position: fixed;
+    display: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    background-color: #fefefe;
+    backface-visibility: hidden;
+    transition: width 0.2s, height 0.2s, transform 0.2s;
+    z-index: 1000;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+}
+
+.zoom {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* .hide {
+    display: none;
+} */
+
+@media (hover:hover) {
+    #cursor,
+    .zoom {
+        display: block;
+    }
 }
 
 /* title */
@@ -118,7 +154,7 @@ img.l {
 
 .phone-demo>.phone {
     width: 330px;
-    height: 635px;
+    height: 641px;
     box-sizing: border-box;
     overflow: hidden;
     background-image: url(../assets/iPhone-black.png);
@@ -127,7 +163,6 @@ img.l {
 
 .phone-demo .screen {
     width: 268px;
-    height: 590px;
     position: relative;
     top: 30px;
     left: 31px;
@@ -139,8 +174,7 @@ img.l {
 }
 
 .hover-child * {
-  border-radius: 20px;
-  transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .hover-child>*:hover {
@@ -161,13 +195,19 @@ img.l {
     justify-self: center;
 }
 
+.chart-container {
+    position: relative;
+    height: 40vh;
+    width: 80vw;
+    margin: var(--title-gap) 0;
+}
 
 iframe.fb-demo {
     display: none;
 }
 
 .topBtn {
-    cursor: pointer;
+    cursor: none;
     color: var(--bg-color-2);
     font-family: 'Porpora';
     font-size: 20px;
@@ -194,7 +234,7 @@ iframe.fb-demo {
     background-color: var(--bg-color-2);
     padding-bottom: 16px;
     border-radius: 8px;
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
     overflow: hidden;
 }
@@ -340,7 +380,7 @@ iframe.fb-demo {
     .outline>.item {
         display: flex;
         align-items: center;
-        cursor: pointer;
+        cursor: none;
         margin: 4px 0;
     }
     .outline>.item p {

@@ -8,22 +8,22 @@ $(document).ready(function () {
 function renderNav() {
     var path = $('html').attr('path');
     var nav = $('nav');
-    var logoImg = $('<div/>').addClass('logo-img');
+    var logoImg = $('<div/>').addClass();
     var logo = $('<a/>').addClass('logo');
-    var work = $('<a/>').append('WORK'),
-        about = $('<a/>').append('ABOUT'),
-        cv = $('<a/>').append('RESUME'),
+    var work = $('<a/>').append('Work'),
+        about = $('<a/>').append('About'),
+        cv = $('<a/>').append('Resume'),
         theme_icon = themeIcon(),
         menu_icon = menuIcon();
 
     if (path == 'home') {
         logo.append(logoImg).click(function () { closeMenu(); smoothScrollTo('#intro') });
-        work.click(function(){closeMenu(); smoothScrollTo('#work')});
+        work.click(function(){closeMenu(); smoothScrollTo('.intro')});
         about.click(function(){closeMenu(); smoothScrollTo('#about')});
         cv.attr('href','./assets/CharisaShinResume.pdf')
     } else {
         logo.append(logoImg).attr('href','../index.html')
-        work.attr('href','../index.html#work')
+        work.attr('href','../index.html')
         about.attr('href','../index.html#about')
         cv.attr('href','../assets/CharisaShinResume.pdf')
     }
@@ -107,6 +107,23 @@ function scrollDetect() {
         });
     });
 }
+
+var cursor = document.getElementById('cursor');
+    window.addEventListener('mousemove' , function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + 'px';
+        cursor.style.top = y + 'px';
+    });
+
+    //CURSOR HOVER ZOOM
+    $(".nav-logo, a, .hero-text, .hero-arrow, .grid-item, nav").hover(function() {
+        $("#cursor").addClass("zoom");
+//        console.log("is this thing on")
+    }, function() {
+        $("#cursor").removeClass("zoom");
+    });
+
 // smooth scroll
 function smoothScrollTo(id) {
     $('html, body').animate({
@@ -116,6 +133,6 @@ function smoothScrollTo(id) {
 //render footer
 function renderFooter(){
     console.log('footer')
-    var footer = $('<footer/>').text('Designed & built with ♡ by Charisa Shin © 2020');
+    var footer = $('<footer/>').text('Designed & Built by Charisa Shin ✨ 2020');
     $('body').append(footer);
 }

@@ -7,8 +7,9 @@ nav {
     background: var(--bg-color);
     position: fixed;
     top: 0px;
-    z-index: 1000;
+    z-index: 100;
     transition: top 300ms ease-in-out, background-color 300ms ease-in-out;
+    cursor: none;
 }
 
 nav.hide {
@@ -36,20 +37,78 @@ nav>.navWrap.open {
 }
 
 .navWrap>a {
-    font-family: "MierA Book", sans-serif;
-    text-transform: capitalize;
+    font-family: "Epilogue", sans-serif;
+    text-transform: none;
     letter-spacing: 0.5px;
-    font-size: 28px;
+    font-size: 42px;
     line-height: 240%;
-    color: #5a79aa;
-    opacity: .8;
-    cursor: pointer;
+    color: var(--text-color-p);
+    cursor: none;
     transition: opacity 300ms ease-in-out;
     text-decoration: none;
 }
 
 .navWrap>a:hover, .navWrap>a.active {
-    opacity: 1;
+    background: var(--underline);
+    padding-bottom:7px;
+    /* background-position-x:0;
+    background-position-y:0; */
+    background-repeat:repeat-x;
+    background-size:15px 7px;
+    background-position:2px 19px;
+    animation:move 15s linear infinite;
+    animation-play-state: running;
+    background-color: transparent;
+}
+
+#cursor {
+    position: fixed;
+    display: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    background-color: #fefefe;
+    backface-visibility: hidden;
+    transition: width 0.2s, height 0.2s, transform 0.2s;
+    z-index: 1000;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+}
+
+.zoom {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* .hide {
+    display: none;
+} */
+
+@media (hover:hover) {
+    #cursor,
+    .zoom {
+        display: block;
+    }
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation: move;
+}
+
+@keyframes move{
+	0%{
+		background-position:2px 19px
+}
+	to{
+		background-position:500px 19px
+}
 }
 
 nav>.logo {
@@ -60,7 +119,7 @@ nav>.logo {
     line-height: 130%;
     color: var(--text-color-primary);
     margin-left: var(--page-margin);
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
     display: flex;
 }
@@ -87,7 +146,7 @@ nav>.menu {
     height: 40px;
     /* background: orange; */
     margin-right: var(--page-margin);
-    cursor: pointer;
+    cursor: none;
     position: relative;
     z-index: 10;
 }
@@ -136,9 +195,9 @@ nav>.menu {
 /* theme switch */
 
 .theme-switch {
+    cursor: none;
     width: 24px;
     height: 24px;
-    cursor: pointer;
     background: url(../assets/moon.svg);
     background-size: cover;
     margin-top: 24px;
@@ -164,7 +223,7 @@ nav>.menu {
         justify-content: space-between;
     }
     nav.hide {
-        top: -80px;
+        top: -100px;
     }
     nav>.menu {
         display: none;
@@ -178,13 +237,13 @@ nav>.menu {
         flex-direction: row;
     }
     .navWrap>* {
-        margin-left: 40px;
+        margin-left: 30px;
     }
     .navWrap>a {
       margin-top: 20px;
-        font-size: 14px;
-        line-height: 150%;
-        color: #5a79aa;
+      font-size: 15px;
+      line-height: 150%;
+      color: var(--text-color-p);
     }
     .theme-switch {
         margin-top: 10px;

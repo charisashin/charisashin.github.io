@@ -71,3 +71,19 @@ function activeDot(index) {
     $('.item').removeClass('active');
     $('#' + index).addClass('active');
 }
+
+var cursor = document.getElementById('cursor');
+    window.addEventListener('mousemove' , function(e){
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + 'px';
+        cursor.style.top = y + 'px';
+    });
+
+    //CURSOR HOVER ZOOM
+    $(".nav-logo, a, .hero-text, .hero-arrow, .grid-item").hover(function() {
+        $("#cursor").addClass("zoom");
+//        console.log("is this thing on")
+    }, function() {
+        $("#cursor").removeClass("zoom");
+    });

@@ -1,46 +1,34 @@
 /* fonts import */
 @import url("https://use.typekit.net/dyj5luj.css");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
 
 
 @font-face {
-  font-family: 'MierA Light';
-  src: url("../assets/MierA-Light.ttf");
-}
-
-@font-face {
-  font-family: 'MierA Book';
-  src: url("../assets/MierA-Book.ttf");
-}
-
-@font-face {
-  font-family: 'MierA Thin';
-  src: url("../assets/MierA-Thin.ttf");
-}
-
-@font-face {
-  font-family: 'Ogg';
-  src: url("../assets/Ogg-Roman.otf");
+  font-family: 'Sporting';
+  src: url("../assets/fonts/Sporting_Grotesque-Bold_web.ttf");
 }
 
 
 /* colors */
 
 html[data-theme='light'] {
-    --bg-color: #FFFFFF;
-    --bg-color-2: #F8F8F9;
-    --text-color-primary: rgba(0, 0, 0, 0.75);
+    --bg-color: #fff;
+    --bg-color-2: #f8f8f9;
+    --text-color-primary: #333;
     --text-color-secondary: rgba(0, 0, 0, 0.45);
     --text-color-tertiary: rgba(0, 0, 0, 0.3);
     --text-color-p: rgba(0, 0, 0, 0.75);
+    --underline: url("https://i.ibb.co/FbrnGV9/curly.png");
 }
 
 html[data-theme='dark'] {
     --bg-color: #242424;
     --bg-color-2: #262626;
-    --text-color-primary: rgba(255, 255, 255, .9);
+    --text-color-primary: rgba(255, 255, 255, .9) !important;
     --text-color-secondary: rgba(255, 255, 255, .55);
     --text-color-tertiary: rgba(255, 255, 255, 0.4);
     --text-color-p: rgba(255, 255, 255, .75);
+    --underline: url("../assets/wave.png");
 }
 
 * {
@@ -49,6 +37,9 @@ html[data-theme='dark'] {
     transition: color 300ms ease-in-out, background-color 300ms ease-in-out ;
 }
 
+p>strong {
+  font-weight: 300;
+}
 
 section.dark {
     --bg-color: #121212;
@@ -62,7 +53,7 @@ section.dark {
 /* footer */
 
 footer {
-    font-family: 'MierA Light', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #b2b2b2;
@@ -80,12 +71,13 @@ body {
     --column-gap: 24px;
     --section-gap: 64px;
     background: var(--bg-color);
+    cursor: none;
 }
 
 /* font */
 
 p, li {
-    font-family: 'MierA Light', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-variation-settings: 'wght' 350;
     font-size: 16px;
     line-height: 180%;
@@ -99,29 +91,28 @@ p>strong, li>strong {
 }
 
 p a {
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
-    border-bottom: 1px dashed #bbbbbb;
-    color: var(--hint-color);
+    border-bottom: 1px dashed #fd8565;
+    color: #fd8565;
 }
 
 
 p a:hover {
-    opacity: 0.5;
     transition: 0.25s;
 }
 
 h1 {
-    font-family: 'Ogg', sans-serif;
+    font-family: 'Sporting', sans-serif;
     font-weight: 300;
     letter-spacing: 0.5px;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 150%;
-    color: #5a79aa;
+    color: var(--text-color-primary);
 }
 
 h2 {
-    font-family: 'MierA Book', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     letter-spacing: 0.5px;
     font-weight: 500;
     font-size: 32px;
@@ -131,7 +122,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'MierA Book', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
@@ -140,7 +131,7 @@ h3 {
 }
 
 .caption {
-    font-family: 'MierA Thin', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -149,7 +140,7 @@ h3 {
 }
 
 .quote {
-    font-family: 'MierA Light', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 24px;
@@ -203,7 +194,7 @@ ol, ul {
         --section-gap: 120px;
     }
     h1 {
-        font-size: 64px;
+        font-size: 56px;
     }
     h2 {
         font-size: 44px;
