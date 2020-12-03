@@ -1,6 +1,5 @@
 /* fonts import */
 @import url("https://use.typekit.net/dyj5luj.css");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
 
 
 @font-face {
@@ -8,6 +7,20 @@
   src: url("../assets/fonts/Sporting_Grotesque-Bold_web.ttf");
 }
 
+@font-face {
+  font-family: 'Circular Regular';
+  src: url('../assets/fonts/CircularStd-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Circular Medium';
+  src: url('../assets/fonts/CircularStdMedium.ttf');
+}
+
+@font-face {
+  font-family: 'Circular Book';
+  src: url('../assets/fonts/CircularStdBook.ttf');
+}
 
 /* colors */
 
@@ -53,7 +66,7 @@ section.dark {
 /* footer */
 
 footer {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Circular Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #b2b2b2;
@@ -77,7 +90,7 @@ body {
 /* font */
 
 p, li {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Circular Regular', sans-serif;
     font-variation-settings: 'wght' 350;
     font-size: 16px;
     line-height: 180%;
@@ -112,7 +125,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Circular Medium', sans-serif;
     letter-spacing: 0.5px;
     font-weight: 500;
     font-size: 32px;
@@ -122,7 +135,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Circular Book', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
@@ -131,7 +144,7 @@ h3 {
 }
 
 .caption {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Circular Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -140,7 +153,7 @@ h3 {
 }
 
 .quote {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Circular Regular', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 24px;

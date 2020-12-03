@@ -1,6 +1,18 @@
 @import url("https://use.typekit.net/ipo2eke.css");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Circular Regular:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+@font-face {
+  font-family: 'Circular Regular';
+  src: url('../assets/fonts/CircularStd-Regular.otf');
+}
+
+
+@font-face {
+  font-family: 'Circular Book';
+  src: url('../assets/fonts/CircularStdBook.ttf');
+}
 
 * {
   break-inside: avoid-column;
@@ -60,11 +72,11 @@ body {
 }
 
 .intro h1 {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Circular Regular', sans-serif;
   color: var(--text-color-p);
   font-weight: 400;
-  font-size: 16px !important;
-  line-height: 1.6em;
+  font-size: 18px !important;
+  line-height: 1.7em;
   margin-top: 70px;
   max-width: 311px;
   text-align: left;
@@ -92,7 +104,7 @@ body {
 
 .blue {
   color: #5a79aa;
-  font-family: "Epilogue";
+  font-family: "Circular Regular";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -266,7 +278,7 @@ body {
 }
 
 .work h3 {
-  font-family: 'Epilogue', Arial, Helvetica, sans-serif;
+  font-family: 'Circular Book', Arial, Helvetica, sans-serif;
   font-size: 24px;
   letter-spacing: 0.7px;
   line-height: 160%;
@@ -278,7 +290,7 @@ body {
 }
 
 .work p {
-  font-family: 'Epilogue', Arial, Helvetica, sans-serif;
+  font-family: 'Circular Regular', Arial, Helvetica, sans-serif;
   font-size: 16px;
   /* line-height: 160%; */
   font-weight: 500;
@@ -331,7 +343,7 @@ body {
 
 .contact {
   color: #5a79aa;
-  font-family: "Epilogue";
+  font-family: "Circular Regular";
   margin-left: 5px;
 }
 
@@ -405,7 +417,7 @@ a:hover .qrcode {
     font-size: 64px;
     max-width: 640px;
     text-align: left;
-    line-height: 32px;
+    line-height: 30px;
     color: var(--text-color-p);;
   }
 
