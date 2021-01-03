@@ -1,2 +1,2 @@
-# charisa.design
-My design portfolio site
+# Initial page
+
