@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Circular Regular';
-  src: url('../assets/fonts/CircularStd-Regular.otf');
+  font-family: 'Graphik Regular';
+  src: url('../assets/fonts/Graphik-Regular.otf');
 }
 nav {
     display: flex;
@@ -13,7 +13,7 @@ nav {
     top: 0px;
     z-index: 100;
     transition: top 300ms ease-in-out, background-color 300ms ease-in-out;
-    cursor: none;
+    /* cursor: none; */
 }
 
 nav.hide {
@@ -41,9 +41,9 @@ nav>.navWrap.open {
 }
 
 .navWrap>a {
-    font-family: "Circular Regular", sans-serif;
+    font-family: "Graphik Regular", sans-serif;
     text-transform: none;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     font-size: 48px;
     line-height: 240%;
     color: var(--text-color-p);
@@ -54,9 +54,7 @@ nav>.navWrap.open {
 
 .navWrap>a:hover, .navWrap>a.active {
     background: var(--underline);
-    padding-bottom:7px;
-    /* background-position-x:0;
-    background-position-y:0; */
+    padding-bottom: 7px;
     background-repeat:repeat-x;
     background-size:15px 7px;
     background-position:2px 19px;
@@ -65,7 +63,23 @@ nav>.navWrap.open {
     background-color: transparent;
 }
 
-#cursor {
+.cursor1 {
+    width: 2rem;
+    height: 2rem;
+    border: var(--cursor-border);
+    opacity: .5;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 10000;
+    backdrop-filter: blur(3px);
+  }
+
+/* #cursor {
     position: fixed;
     display: none;
     transform: translate(-50%, -50%);
@@ -78,7 +92,7 @@ nav>.navWrap.open {
     pointer-events: none;
     width: 20px;
     height: 20px;
-}
+} */
 
 .zoom {
     width: 50px !important;
@@ -89,12 +103,12 @@ nav>.navWrap.open {
     display: none;
 } */
 
-@media (hover:hover) {
+/* @media (hover:hover) {
     #cursor,
     .zoom {
         display: block;
     }
-}
+} */
 
 .animate__fadeIn {
   animation-name: fadeIn;
@@ -123,7 +137,7 @@ nav>.logo {
     line-height: 130%;
     color: var(--text-color-primary);
     margin-left: var(--page-margin);
-    cursor: none;
+    /* cursor: none; */
     text-decoration: none;
     display: flex;
 }
@@ -150,7 +164,7 @@ nav>.menu {
     height: 40px;
     /* background: orange; */
     margin-right: var(--page-margin);
-    cursor: none;
+    /* cursor: none; */
     position: relative;
     z-index: 10;
 }
@@ -199,7 +213,7 @@ nav>.menu {
 /* theme switch */
 
 .theme-switch {
-    cursor: none;
+    /* cursor: none; */
     width: 24px;
     height: 24px;
     background: url(../assets/moon.svg);
@@ -244,7 +258,7 @@ nav>.menu {
         margin-left: 30px;
     }
     .navWrap>a {
-      margin-top: 20px;
+      margin-top: 15px;
       font-size: 16px;
       line-height: 150%;
       color: var(--text-color-p);

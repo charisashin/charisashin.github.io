@@ -3,23 +3,23 @@
 
 
 @font-face {
-  font-family: 'Sporting';
-  src: url("../assets/fonts/Sporting_Grotesque-Bold_web.ttf");
+  font-family: 'Druk Wide';
+  src: url("../assets/fonts/DrukWideBold.otf");
 }
 
 @font-face {
-  font-family: 'Circular Regular';
-  src: url('../assets/fonts/CircularStd-Regular.otf');
+  font-family: 'Graphik Regular';
+  src: url('../assets/fonts/Graphik-Regular.otf');
 }
 
 @font-face {
-  font-family: 'Circular Medium';
-  src: url('../assets/fonts/CircularStdMedium.ttf');
+  font-family: 'Graphik Medium';
+  src: url('../assets/fonts/GraphikMedium.otf');
 }
 
 @font-face {
-  font-family: 'Circular Book';
-  src: url('../assets/fonts/CircularStdBook.ttf');
+  font-family: 'Graphik Semibold';
+  src: url('../assets/fonts/GraphikSemibold.otf');
 }
 
 /* colors */
@@ -32,6 +32,7 @@ html[data-theme='light'] {
     --text-color-tertiary: rgba(0, 0, 0, 0.3);
     --text-color-p: rgba(0, 0, 0, 0.75);
     --underline: url("https://i.ibb.co/FbrnGV9/curly.png");
+    --cursor-border: 1px solid black;
 }
 
 html[data-theme='dark'] {
@@ -42,6 +43,7 @@ html[data-theme='dark'] {
     --text-color-tertiary: rgba(255, 255, 255, 0.4);
     --text-color-p: rgba(255, 255, 255, .75);
     --underline: url("../assets/wave.png");
+    --cursor-border: 1px solid white;
 }
 
 * {
@@ -66,7 +68,7 @@ section.dark {
 /* footer */
 
 footer {
-    font-family: 'Circular Regular', sans-serif;
+    font-family: 'Graphik Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #b2b2b2;
@@ -87,10 +89,26 @@ body {
     cursor: none;
 }
 
+.cursor1 {
+    width: 2rem;
+    height: 2rem;
+    border: var(--cursor-border);
+    opacity: .5;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+  }
+
 /* font */
 
 p, li {
-    font-family: 'Circular Regular', sans-serif;
+    font-family: 'Graphik Regular', sans-serif;
     font-variation-settings: 'wght' 350;
     font-size: 16px;
     line-height: 180%;
@@ -106,8 +124,8 @@ p>strong, li>strong {
 p a {
     cursor: none;
     text-decoration: none;
-    border-bottom: 1px dashed #fd8565;
-    color: #fd8565;
+    border-bottom: 1px dashed var(--text-color-p);
+    color: var(--text-color-p);
 }
 
 
@@ -116,7 +134,7 @@ p a:hover {
 }
 
 h1 {
-    font-family: 'Sporting', sans-serif;
+    font-family: 'Druk Wide', sans-serif;
     font-weight: 300;
     letter-spacing: 0.5px;
     font-size: 32px;
@@ -125,8 +143,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Circular Medium', sans-serif;
-    letter-spacing: 0.5px;
+    font-family: 'Graphik Medium', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 150%;
@@ -135,7 +152,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Circular Book', sans-serif;
+    font-family: 'Graphik Semibold', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
@@ -143,17 +160,35 @@ h3 {
     margin-bottom: var(--title-gap);
 }
 
+h4 {
+  font-family: 'Graphik Regular', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  margin-top: var(--title-gap);
+  color: var(--text-color-primary);
+
+}
+
+.bold {
+font-family: 'Graphik Semibold'
+}
+
+.emphasis {
+  font-weight: 500;
+}
+
 .caption {
-    font-family: 'Circular Regular', sans-serif;
+    font-family: 'Graphik Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
     color: var(--text-color-p);
-    margin-top: 1em;
+    margin-top: -1em;
 }
 
 .quote {
-    font-family: 'Circular Regular', sans-serif;
+    font-family: 'Graphik Regular', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 24px;

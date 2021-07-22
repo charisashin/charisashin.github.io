@@ -20,7 +20,7 @@ function renderNav() {
         logo.append(logoImg).click(function () { closeMenu(); smoothScrollTo('#intro') });
         work.click(function(){closeMenu(); smoothScrollTo('.intro')});
         about.click(function(){closeMenu(); smoothScrollTo('#about')});
-        cv.attr('href','./assets/CharisaShinResume.pdf')
+        cv.attr('href','./assets/CharisaShin2021.pdf')
     } else {
         logo.append(logoImg).attr('href','../index.html')
         work.attr('href','../index.html')
@@ -92,37 +92,26 @@ function scrollDetect() {
             var after = $(window).scrollTop();
             if (before <= 0) {
                 nav.removeClass('hide')
-                // before = after;
             }
             else if (before < after) {
                 nav.addClass('hide')
-                // console.log('上');
                 before = after;
             }
             else if (before > after) {
                 nav.removeClass('hide')
-                // console.log('下');
                 before = after;
             };
         });
     });
 }
 
-var cursor = document.getElementById('cursor');
-    window.addEventListener('mousemove' , function(e){
-        var x = e.clientX;
-        var y = e.clientY;
-        cursor.style.left = x + 'px';
-        cursor.style.top = y + 'px';
-    });
+let mouseCursor = document.querySelector(".cursor1");
+window.addEventListener('mousemove', cursor);
 
-    //CURSOR HOVER ZOOM
-    $(".nav-logo, a, .hero-text, .hero-arrow, .grid-item, nav").hover(function() {
-        $("#cursor").addClass("zoom");
-//        console.log("is this thing on")
-    }, function() {
-        $("#cursor").removeClass("zoom");
-    });
+function cursor(e){
+    mouseCursor.style.top = e.pageY + 'px';
+    mouseCursor.style.left = e.pageX + 'px';
+}
 
 // smooth scroll
 function smoothScrollTo(id) {
@@ -133,6 +122,6 @@ function smoothScrollTo(id) {
 //render footer
 function renderFooter(){
     console.log('footer')
-    var footer = $('<footer/>').text('Designed & Built by Charisa Shin ✨ 2020');
+    var footer = $('<footer/>').text('Designed & Built by Charisa Shin ✨ 2021');
     $('body').append(footer);
 }
