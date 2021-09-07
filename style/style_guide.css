@@ -152,7 +152,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Graphik Semibold', sans-serif;
+    font-family: 'Graphik Medium', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
@@ -183,7 +183,7 @@ font-family: 'Graphik Semibold'
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
-    color: var(--text-color-p);
+    color: #a1a1a1;
     margin-top: -1em;
 }
 
